@@ -58,8 +58,9 @@ const TodoList = () => {
   // };
 
   return (
+    <div className='todo-container'>
     <ul className='todo-list'>
-      {/* <h2>All Todos</h2> */}
+      <h2>All Todos</h2>
       {todos.map((todo, index) => (
         <li key={index}>
           {editableTodo?.id === todo.id ? (
@@ -87,6 +88,7 @@ const TodoList = () => {
         </li>
       ))}
     </ul>
+    </div>
   );
 };
 
